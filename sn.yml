@@ -1,9 +1,7 @@
 ---
 - name: Create ticket with notes
-  hosts: localhost
+  hosts: all
   gather_facts: no
-  connection: local
-
   tasks:
   - name: Create a change request
     snow_record:
