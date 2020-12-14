@@ -1,0 +1,21 @@
+---
+- name: Create ticket with notes
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Create a change request
+    snow_record:
+      state: present
+      table: incident
+      username: admin
+      password: GKqcKy3D7eqF
+      instance: dev60028
+      data:
+        severity: 2
+        priority: 2
+        short_description: "New VM created sucessfully on Azure"
+    register: new_incident
+
+  - debug: 
+      var: new_incident.record
