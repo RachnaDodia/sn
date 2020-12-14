@@ -1,10 +1,10 @@
 ---
-- name: Create ticket with notes
+- name: Report an incident on SN
   hosts: localhost
   connection: local
   gather_facts: no
   tasks:
-  - name: Create a change request
+  - name: Create a incident
     snow_record:
       state: present
       table: incident
