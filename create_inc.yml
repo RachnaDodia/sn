@@ -1,5 +1,5 @@
 ---
-- name: Report an incident on SN
+- name: Register an incident on SN
   hosts: localhost
   connection: local
   gather_facts: no
