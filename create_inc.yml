@@ -15,7 +15,6 @@
         severity: 2
         priority: 2
         short_description: "New VM created sucessfully on Azure"
-        caller: "Rachna Dodia"
         category: Network
     register: new_incident
 
