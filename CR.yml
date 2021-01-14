@@ -20,5 +20,4 @@
     register: change
 
   - debug: 
-      var: change.record
-      verbosity: 3
+      var: change.record.task_effective_number
