@@ -16,6 +16,7 @@
         priority: 2
         category: Software
         short_description: "Application Sucessfuly deployed on Tomcat"
+        description: "Sample Java Application deployment is successfully completed"
     register: change
 
   - debug: 
