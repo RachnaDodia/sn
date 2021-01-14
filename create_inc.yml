@@ -9,12 +9,12 @@
       state: present
       table: incident
       username: admin
-      password: GKqcKy3D7eqF
-      instance: dev60028
+      password: cusEWWG5j7kI
+      instance: dev71090
       data:
         severity: 2
         priority: 2
-        short_description: "New VM created sucessfully on Azure"
+        short_description: "Application Sucessfuly deployed on Tomcat"
         category: Network
     register: new_incident
 
