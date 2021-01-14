@@ -1,5 +1,5 @@
 ---
-- name: Create ticket with notes
+- name: Create a change request on Service now
   hosts: localhost
   connection: local
   gather_facts: no
@@ -9,13 +9,14 @@
       state: present
       table: change_request
       username: admin
-      password: GKqcKy3D7eqF
-      instance: dev60028
+      password: cusEWWG5j7kI
+      instance: dev71090
       data:
         severity: 2
         priority: 2
-        short_description: "This is a test opened by Ansible"
-    register: new_incident
+        category: Software
+        short_description: "Application Sucessfuly deployed on Tomcat"
+    register: change
 
   - debug: 
-      var: new_incident.record
+      var: change.record
