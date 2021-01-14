@@ -12,10 +12,10 @@
       password: cusEWWG5j7kI
       instance: dev71090
       data:
-        severity: 2
+        severity: 3
         priority: 2
         short_description: "Application Sucessfuly deployed on Tomcat"
-        category: Network
+        category: Software
     register: new_incident
 
   - debug: 
