@@ -21,4 +21,4 @@
 
   - debug: 
       var: change.record
-      verbosity: 4
+      verbosity: 3
