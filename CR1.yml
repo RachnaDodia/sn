@@ -1,0 +1,23 @@
+---
+- name: Create a change request on Service now
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Create a change request
+    snow_record:
+      state: present
+      table: change_request
+      username: admin
+      password: cusEWWG5j7kI
+      instance: dev71090
+      data:
+        severity: 2
+        priority: 2
+        category: Software
+        short_description: "Dot Net Deploymnet"
+        description: "Dot Net Successfuly installed followed by deployment of the Dot Net application ,"
+    register: change
+
+  - debug: 
+      var: change.record.task_effective_number
