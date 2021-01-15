@@ -16,7 +16,7 @@
         priority: 2
         category: Software
         short_description: "Dot Net Deploymnet"
-        description: "Dot Net  Framework Successfuly installed followed by deployment of the Dot Net core application ,"
+        description: "Dot Net  Framework Successfuly installed followed by deployment of the Dot Net core application."
     register: change
 
   - debug: 
