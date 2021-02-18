@@ -9,14 +9,14 @@
       state: present
       table: change_request
       username: admin
-      password: cusEWWG5j7kI
-      instance: dev71090
+      password: n40pVbBsCeDG
+      instance: dev87194
       data:
         severity: 2
         priority: 2
         category: Software
-        short_description: "Application Sucessfuly deployed on Tomcat"
-        description: "Sample Java Application deployment is successfully completed"
+        short_description: "Dot net core application successfully deployed"
+        description: "Dot net core application successfully deployed"
     register: change
 
   - debug: 
