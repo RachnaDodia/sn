@@ -1,0 +1,23 @@
+---
+- name: Create a change request on Service now
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Create a change request
+    snow_record:
+      state: present
+      table: change_request
+      username: admin
+      password: n40pVbBsCeDG
+      instance: dev87194
+      data:
+        severity: 2
+        priority: 2
+        category: Software
+        short_description: "Dot net core application successfully deployed"
+        description: "Dot net core application successfully deployed"
+    register: change
+
+  - debug: 
+      var: change.record.task_effective_number

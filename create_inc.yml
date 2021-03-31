@@ -1,0 +1,22 @@
+---
+- name: Register an incident on SN
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  tasks:
+  - name: Create a incident
+    snow_record:
+      state: present
+      table: incident
+      username: admin
+      password: cusEWWG5j7kI
+      instance: dev71090
+      data:
+        severity: 3
+        priority: 2
+        short_description: "Application Sucessfuly deployed on Tomcat"
+        category: Software
+    register: new_incident
+
+  - debug: 
+      var: new_incident.record
