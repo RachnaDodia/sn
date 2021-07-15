@@ -9,8 +9,8 @@
       state: present
       table: incident
       username: admin
-      password: cusEWWG5j7kI
-      instance: dev71090
+      password: cbOheOVW8pA1
+      instance: dev110714
       data:
         severity: 3
         priority: 2
