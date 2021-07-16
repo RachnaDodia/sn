@@ -1,7 +1,6 @@
 ---
 - name: Register an incident on SN
   hosts: all
-  connection: local
   tasks:
   - name: Create a incident
     snow_record:
