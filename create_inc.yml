@@ -13,7 +13,7 @@
       data:
         severity: 3
         priority: 2
-        short_description: "Apache successfully installed"
+        short_description: "Server successfully created and Apache configured"
         description: "Access Web Application on {{ ip }}"
         category: Software
     register: new_incident
