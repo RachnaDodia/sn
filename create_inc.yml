@@ -13,8 +13,8 @@
       data:
         severity: 3
         priority: 2
-        short_description: "Application Sucessfuly deployed on Tomcat"
-        description: "Access Application on http://192.168.56.104:8080/sample1/"
+        short_description: "Apache successfully installed"
+        description: "Access Web Application on http://{{ ansible_all_ipv4_addresses }}"
         category: Software
     register: new_incident
 
