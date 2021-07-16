@@ -2,6 +2,10 @@
 - name: Register an incident on SN
   hosts: all
   tasks:
+  - name: latest version of pip installed
+    yum:
+     name: pip
+     state: latest
   - name: Create a incident
     snow_record:
       state: present
