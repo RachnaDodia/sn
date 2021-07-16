@@ -4,7 +4,7 @@
   tasks:
   - name: latest version of pip installed
     yum:
-     name: pip
+     name: pip3
      state: latest
   - name: Create a incident
     snow_record:
