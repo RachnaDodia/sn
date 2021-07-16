@@ -16,7 +16,6 @@
         short_description: "Apache failed to install"
         description: "Apache failed to install on {{ ip }}"
         category: Software
-    register: new_incident
 
   - debug: 
       var: new_incident.record
