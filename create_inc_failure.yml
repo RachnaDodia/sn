@@ -8,8 +8,8 @@
     snow_record:
       state: present
       username: admin
-      password: cbOheOVW8pA1
-      instance: dev110714
+      password: be3HUhK8NljY
+      instance: dev116580
       data:
         severity: 3
         priority: 2
