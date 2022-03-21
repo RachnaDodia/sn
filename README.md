@@ -1,6 +1,8 @@
 # sn. https://developer.servicenow.com/dev.do
 
-Your instance URL:https://dev71090.service-now.com
+Your instance URL:https://dev117483.service-now.com
 
 Username: admin
-Current password: cusEWWG5j7kI
+Current password: lwj17dwSVWUK
+
+
